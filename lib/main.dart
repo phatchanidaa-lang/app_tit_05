@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
 
 
 
-// ฟังก์ชันช่วยสร้างตัวเลขสถิติ (ตัวเลข + ข้อความป้าย)
+
   Widget _stat(String number, String label) {
     return Column(
       children: [
@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-// ===== แก้ข้อมูลตรงนี้ได้เลย =====
+
     const String accountId = 'phztchanida';
     const String posts = '3';
     const String followers = '2.158K';
@@ -56,18 +56,18 @@ class HomePage extends StatelessWidget {
     const String caption1 = 'ni xihuan wo ma??';
     const String caption2 = 'ไม่เอาอะไรแล้วอยากนอนนน';
 
-// ลิงก์ภาพเดียว ใช้ซ้ำทั้ง 3 ช่อง (เปลี่ยนเป็นลิงก์ที่ต้องการได้)
-    const String galleryImage = '';
+
+    const String galleryImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFPvEozeSmsu6b0uCK_phQSQRn5xs2vqmLFr_YipSegY3-ilTyItajpoQ&s=10';
     const String galleryImage1 = 'https://i.pinimg.com/736x/c2/33/23/c23323f267f09bdcc162657ff4000990.jpg';
     const String galleryImage2 = 'https://i.pinimg.com/236x/b3/e4/ba/b3e4ba376b231c25b0a5ab53d746d214.jpg';
 
-// =================================
+
     return Scaffold(
       backgroundColor: Colors.white,
 
 
 
-// ① AppBar
+
       appBar: AppBar(
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
@@ -90,12 +90,12 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-// ② รูปโปรไฟล์ + สถิติ 3 ช่อง
+
               Row(
                 children: [
                   const CircleAvatar(
                     radius: 40,
-                    backgroundImage: AssetImage('assets/images.jpeg'),
+                    backgroundImage: AssetImage('assets/IMG_2749.JPG'),
                   ),
                   Expanded(
                     child: Row(
@@ -115,7 +115,7 @@ class HomePage extends StatelessWidget {
 
 
 
-// ③ ชื่อและแคปชัน
+
               const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -134,7 +134,7 @@ class HomePage extends StatelessWidget {
 
 
 
-// ④ ปุ่มติดตาม (ทึบ) + ปุ่มข้อความ (มีเส้นขอบ)
+
               Row(
                 children: [
                   Expanded(
@@ -172,7 +172,6 @@ class HomePage extends StatelessWidget {
 
 
 
-// ⑤ แถบไอคอน
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -186,7 +185,7 @@ class HomePage extends StatelessWidget {
 
 
 
-// ⑥ แกลเลอรีภาพ 3 คอลัมน์
+
               GridView.count(
                 crossAxisCount: 3,
                 shrinkWrap: true,
